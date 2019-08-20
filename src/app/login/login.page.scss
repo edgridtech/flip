@@ -1,0 +1,88 @@
+.login {
+    text-align: center;
+    .back {
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        width: 11px;
+        margin: 6px 12px;
+    }
+    .main-heading {font-family: 'grotesque-bold';
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 10px 0 !important
+    }
+    .sec-text {
+        margin: 0 16% 0 16%  !important;
+        font-size: 16px;
+        font-weight: 300;
+        width: 68%;
+        text-align: center
+    }
+    .image {
+        width: 50%;
+        margin: 20px 25%
+    }
+    .btns {
+        padding: 0 20px;
+        .wide-btn {
+            width: 100%;
+            height: 50px;
+            line-height: 47px;
+            border-radius: 50px;
+            font-size: 14px;
+            border: 0;
+            text-align: left;
+            color: #fff;
+            font-weight: 500;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: 5px 0;
+            img {
+                float: right;
+                width: 20px;
+                margin-top: 13px;
+            }
+        } 
+        .facebook {
+            background-color: #405993
+        }
+        .google {
+            background-color: #D8503F
+        }
+    }
+    .or {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500
+    }
+    .inputs {
+        padding: 0 20px 20px 20px;
+        input, select {
+            margin: 10px 0;
+            padding-left: 20px;
+            width: 100%;
+            background-color: transparent;
+            font-size: 18px;
+            color : #222829;
+        }
+        input:focus, select:focus {
+            outline: none;
+            box-shadow: 0 0 5px #9ec7f5;
+            border: 1px solid #4693ec8c;
+        }
+        input::placeholder, option {
+            color: #4E5253;
+            font-size: 16px;
+        }
+    }
+    .small {
+        font-size: 16px;
+        .blue--text {
+            font-weight: 500;
+        }
+    }
+}

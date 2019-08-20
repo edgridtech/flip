@@ -3,8 +3,9 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: 'grotesque-light';
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #54C270;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -74,4 +75,40 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-tabbar-icon-color-active : #54C270;
 }
+
+// fonts
+@font-face {
+  font-family: 'grotesque-light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/BasisGrotesquePro-Light.ttf');
+}
+@font-face {
+  font-family: 'grotesque-regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/BasisGrotesquePro-Regular.ttf');
+}
+@font-face {
+  font-family: 'grotesque-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/BasisGrotesquePro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'tisapro-regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/TisaPro-Regular.otf');
+}
+@font-face {
+  font-family: 'tisapro-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/TisaPro-Bold.otf');
+}
+

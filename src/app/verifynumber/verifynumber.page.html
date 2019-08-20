@@ -1,0 +1,24 @@
+<ion-content class="verify">
+    <img src="../../assets/back.svg" class="back" (click)="back()" alt="">
+    <p class="blue--text main-heading">
+      Enter code
+    </p>
+    <p class="sec-text dark--text1">
+      Enter the confirmation code sent to your phone number below.
+    </p>
+  <div class="inputs">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+  </div>
+
+
+  <button class="green-btn big-btn" [routerLink]="['/choosesubjects']">
+    Confirm
+  </button>
+
+  <p class="small dark--text1">
+    Didnt get the code? <span class="blue--text" [routerLink]="['/login']">Resend</span>
+  </p>
+</ion-content>

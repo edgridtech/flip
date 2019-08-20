@@ -1,0 +1,57 @@
+.span {
+    width: 20%;
+    height: 4px;
+    margin: 2px 40%;
+    border-radius: 5px;
+    background-color: #D3D4D8
+}
+.roww {
+    border-bottom: 1px solid #F1F5FF;
+    padding: 5px 0 !important;
+    ion-col {
+        overflow: hidden;
+        .img {
+                border-radius: 5px !important;
+                background-size: cover !important;
+                overflow: hidden !important;
+                min-width: 98%;
+                height: 65px;
+                margin: auto
+        }
+        .heading {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600
+            // padding-left: 12px
+        }
+        .sub-text {
+            font-size: 16px;
+            margin: 0;
+            color: #505565 !important;
+            // padding-left: 12px
+        }
+        .tag {
+            margin: 5px 0
+        }
+    }
+}
+.sheet-title {
+    font-size: 16px;
+    font-family: 'grotesque-bold';
+}
+button {
+    margin: 12px 0;
+    img {
+        float: right;
+        margin-right: 20px;
+        width: 16px
+    }
+}
+.text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px
+}
+.lvl {
+    margin: 0 10px 0 0
+}

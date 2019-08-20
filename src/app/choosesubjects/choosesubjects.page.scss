@@ -1,0 +1,57 @@
+.choosesubjects {
+    text-align: center;
+    .main-heading {font-family: 'grotesque-bold';
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 10px 0 !important
+    }
+    .sec-text {
+        margin: 0 10% !important;
+        font-size: 16px;
+        font-weight: 300;
+        width: 80%;
+        text-align: center
+    }
+    .grid_ {
+        padding: 30px 10px !important;
+        font-family: 'grotesque-regular';
+        .col_ {
+            height: 80px;
+            width: 100%;
+            overflow: hidden;
+            padding: 0 !important;
+            border-radius: 5px;
+            .overlay {
+                width: 120%;
+                height: 100px;
+                background: rgba(0, 0, 0, 0.5);
+                position: relative;
+                top: 0;
+                z-index: 2;
+            }
+            .card-content {
+                position: relative;
+                top: -85px;
+                padding: 0 10px;
+                z-index: 3;
+                .subject {
+                    color: white;
+                    font-size: 16px;
+                    float: left
+                }
+                .check {
+                    float: right;
+                    width: 20px
+                }
+            }
+            .subject-img {
+                position: relative;
+                top: -100px;
+                z-index: 1;
+                width: 120%;   
+            }
+        }
+    }
+}

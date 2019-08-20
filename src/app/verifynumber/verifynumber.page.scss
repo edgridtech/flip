@@ -1,0 +1,52 @@
+.verify {
+    text-align: center;
+    .back {
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        width: 11px;
+        margin: 6px 12px;
+    }
+    .main-heading {font-family: 'grotesque-bold';
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 10px 0 !important
+    }
+    .sec-text {
+        margin: 0 10% !important;
+        font-size: 16px;
+        font-weight: 300;
+        width: 80%;
+        text-align: center
+    }
+    .inputs {
+        width: 100%;
+        padding: 20px 0;
+        input {
+            display: inline;
+            max-width: 20%;
+            max-height: 50px;
+            min-width: 20%;
+            min-height: 50px;
+            margin: 10px 2%;
+            border: 1px solid #DBE6EC;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-align: center
+        }
+    }
+
+    .big-btn {
+        margin: 12px 0
+    }
+
+    .small {
+        font-size: 16px;
+        .blue--text {
+            font-weight: 500;
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+<ion-header no-border>
+  <img src="../../assets/back.svg" class="back" (click)="back()" alt="">
+  <p class="green--text">
+    Edit profile
+  </p>
+</ion-header>
+
+<ion-content class="edit-profile">
+  <div class="center">
+    <div class="photo" style="background-image: url('../../assets/default profile pix.png')">
+      <img src="../../assets/camera.svg" alt="">
+    </div>
+  </div>
+  <div class="inputs">
+    <input type="text" class="main-inp" placeholder="Your full name">
+    <input type="text" class="main-inp" placeholder="Your password">
+    <select type="text" class="main-inp">
+      <option value="one">one</option>
+      <option value="two">two</option>
+      <option value="three">three</option>
+    </select>
+    <input type="text" class="main-inp" placeholder="Your phone number">
+  </div>
+  <button class="green-btn big-btn" [routerLink]="['/profile']">
+    Update
+  </button>
+  </ion-content>

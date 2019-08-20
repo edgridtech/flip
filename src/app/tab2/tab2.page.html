@@ -1,9 +1,607 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
+<ion-header no-border>
+  <p class="green--text">
+    Your bookmarks
+    <img src="../../assets/search.svg" alt="">
+    <img src="../../assets/notification.svg" alt="">
+  </p>
 </ion-header>
+  
 
-<ion-content></ion-content>
+<ion-content class="bookmarks" *ngIf="empty">
+  <img src="../../assets/empty.svg" alt="" class="empty-img">
+  <p class="empty-text blue--text">
+    You have not bookmarked any flip. When you do, it will appear here
+  </p>
+</ion-content>
+<ion-content class="bookmarks" *ngIf="!empty">
+    <p class="heading">
+      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+    </p>
+    <div class="scrolling-wrapper">
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p class="heading">
+      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+    </p>
+    <div class="scrolling-wrapper">
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p class="heading">
+      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+    </p>
+    <div class="scrolling-wrapper">
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="heading">
+      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+    </p>
+    <div class="scrolling-wrapper">
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p class="heading">
+      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+    </p>
+    <div class="scrolling-wrapper">
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card_" (click)="openSheet()">
+        <div class="subject-card">
+          <div class="banner" style="background-image: url(../../assets/Rectangle.png)"></div>
+          <div class="content">
+            <p class="blue--text card-title">
+              What are cells?
+            </p>
+            <p class="dark--text1 card-summary">
+              An introduction to cells
+            </p>
+            <img src="../../assets/tag.svg" class="tag" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+

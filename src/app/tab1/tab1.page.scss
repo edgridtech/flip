@@ -1,4 +1,63 @@
-.welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+ion-header {
+  margin-bottom: 10px;
+  p {
+    padding: 0 15px;
+    font-weight: 600;
+    img {
+      float: right;
+      margin: 0 0 0 15px;
+      width: 20px
+    }
+  }
+}
+.tab1 {
+  .heading {
+    color: #112A62;
+    padding: 0 10px;
+    font-size: 18px;
+    font-family: 'grotesque-bold';
+    .green--text {
+      float: right;
+      font-size: 14px
+    }
+  }
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    .card_ {
+      display: inline-block;
+      max-width: 65%;
+      min-width: 65%;
+      padding: 0 10px !important;
+      border-radius: 7px;
+      .subject-card {
+        box-shadow: 0px 4px 25px rgba(103, 116, 124, 0.05);
+        border-radius: 5px;
+        width: 100%;
+        overflow: hidden;
+        .banner {
+          width: 100%;
+          height: 115px;
+          background-position: center;
+          background-size: cover;
+        }
+        .content {
+          padding: 0 10px 10px 10px;
+          .card-title {
+            margin: 5px 0 !important;
+            font-family: 'grotesque-bold';
+            font-size: 18px;
+          }
+          .card-summary {
+            font-size: 14px;
+            margin: 5px 0 12px 0;
+            width: 100%;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }    
 }

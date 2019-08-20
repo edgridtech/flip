@@ -1,3 +1,36 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+  <div class="actionsheet" *ngIf="globals.actionsheet.open" (click)="closeSheet()">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="span"></div>
+        <ion-row class="roww">
+          <ion-col size="3">
+            <div class="img" style="background-image: url('../assets/Rectangle.png')"></div>
+          </ion-col>
+          <ion-col size="9">
+            <h3 class="blue--text heading">I'm a big deal</h3>
+            <p class="sub-text">Listen, I've had a pretty messed</p>
+            <img src="../assets/tag.svg" class="tag" alt="">
+          </ion-col>
+        </ion-row>
+        <p class="blue--text sheet-title">
+          <b>About this flip?</b>
+        </p>
+        <p class="text">
+            In this flip, you will be introduced to core concepts in cell biology 
+            including the definition of cells, types of cells, cell components and 
+        </p>
+        <p class="blue--text sheet-title">
+          <b>Level</b>
+        </p>
+        <img src="../assets/beginner.svg" class="lvl" alt=""> <span class="text">Beginner</span> <br>
+
+        <div class="center">
+          <button class="green-btn big-btn" [routerLink]="['/verifynumber']">
+            <b>Read flip </b> <img src="../assets/lock.svg" alt="">
+          </button>
+        </div>
+    </div>
+  </div>
 </ion-app>

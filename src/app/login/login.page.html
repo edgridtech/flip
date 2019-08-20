@@ -1,0 +1,39 @@
+<ion-content class="login">
+    <img src="../../assets/back.svg" class="back" (click)="back()" alt="">
+    <p class="blue--text main-heading">
+      Welcome back
+    </p>
+    <p class="sec-text dark--text1">
+      Let’s get you right back where you left off
+    </p>
+  
+    <img src="../../assets/login.svg" alt="" class="image">
+    <div class="btns">
+      <button class="wide-btn facebook">
+        Sign up with Facebook <img src="../../assets/facebook.svg" alt="">
+      </button>
+      <button class="wide-btn google">
+        Sign up with Google <img src="../../assets/google.svg" alt="">
+      </button>
+    </div>
+    <p class="or blue--text">
+      OR
+    </p>
+    <div class="inputs">
+      <select type="text" class="main-inp">
+        <option value="one">one</option>
+        <option value="two">two</option>
+        <option value="three">three</option>
+      </select>
+      <input type="text" class="main-inp" placeholder="Your phone number">
+      <input type="text" class="main-inp" placeholder="Your password">
+    </div>
+  
+    <button class="green-btn big-btn" [routerLink]="['/tabs']">
+      Log in
+    </button>
+    <p class="small dark--text1">
+      Dont have an account? <span class="blue--text" [routerLink]="['/signup']">sign up</span>
+    </p>
+  </ion-content>
+  

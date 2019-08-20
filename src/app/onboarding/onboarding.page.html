@@ -1,0 +1,45 @@
+
+<ion-content class="onboarding">
+  <ion-slides pager="true">
+    <ion-slide>
+      <div class="silde-child">
+          <img src="../../assets/onboarding1.svg" alt="">
+          <p class="blue--text top-text">
+            Learn a topic in five minutes
+          </p>
+          <p class="dark--text1c btm-text">
+            A flip is a five-minute summary of a topic. Discover flips on different topics from your school subjects or courses. It’s an easy way to learn.
+          </p>
+        </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="silde-child">
+          <img src="../../assets/onboarding2.svg" alt="">
+          <p class="blue--text top-text">
+            Save flips to study later
+          </p>
+          <p class="dark--text1 btm-text">
+            Not time to learn? Not a problem! You can save flips and study them later. You will never run out of topics to study as new flips are added regularly.
+          </p>
+        </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="silde-child">
+          <img src="../../assets/onboarding3.svg" alt="">
+          <p class="blue--text top-text">
+            There’s something for everyone!
+          </p>
+          <p class="dark--text1 btm-text">
+              Flips are customized so you can study at your level - beginner, intermediate or advanced. Go step by step as you learn. 
+          </p>
+        </div>
+    </ion-slide>
+  </ion-slides>
+
+  <button class="green-btn big-btn" [routerLink]="['/signup']">
+    Sign up
+  </button> <br>
+  <button class="white-btn big-btn" [routerLink]="['/login']">
+    Log in
+  </button>
+</ion-content>

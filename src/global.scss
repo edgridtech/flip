@@ -24,3 +24,121 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.swiper-pagination-bullet {
+    background: rgba(43, 72, 102, 0.5) !important;
+    width: 32px !important;
+    border-radius: 8px !important;
+    height: 4px !important;
+}
+.swiper-pagination-bullet-active {
+    width: 32px !important;
+    border-radius: 8px !important;
+    height: 4px !important;
+    background-color: #112A62 !important
+}
+.green-btn {
+    background: #54C270;
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+    color: #fff
+}
+
+.blue--text {
+    color: #112A62 !important;
+}
+.green--text {
+    color: #54C270 !important;
+}
+.dark--text1 {
+    color : #222829 !important;
+}
+
+.main-inp {
+    height: 54px;
+    border: 1px solid #DBE6EC;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #9ec7f5;
+    border: 1px solid #4693ec8c;
+}
+input::placeholder, option {
+    color: #4E5253;
+    font-size: 16px;
+}
+
+.white-btn {
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid rgba(17, 43, 98, 0.342);
+    text-align: center;
+    color: #112A62
+}
+.big-btn {
+    width: 170px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    font-family: 'grotesque-regular';
+}
+button[disabled] {
+    background-color: #D2D4D4 !important
+}
+button:focus {
+    outline: none !important
+}
+.center {
+    width: 100%;
+    text-align: center
+}
+ion-header {
+    background: #FFFFFF !important;
+    font-family: 'grotesque-bold' !important;
+    font-size: 20px !important;
+    box-shadow: 0px 4px 25px rgba(103, 116, 124, 0.05) !important;
+    border: 1px solid rgba(219, 230, 236, 0.5) !important;
+}
+
+.actionsheet {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .overlay {
+        background-color: #000;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    .content {
+        height: 390px;
+        width: 100%;
+        background-color: #FFFFFF;
+        position: fixed;
+        bottom: 0;
+        z-index: 1005;
+        border-radius: 10px 10px 0 0;
+        padding: 12px;
+        animation-name: grow;
+        animation-duration: 0.7s;
+        overflow: hidden;
+    }
+    @keyframes grow {
+        from {
+            height: 0px
+        }
+        to {
+            height: 390px
+        }
+    }
+}

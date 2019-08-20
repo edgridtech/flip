@@ -1,0 +1,28 @@
+.onboarding {
+    text-align: center;
+    ion-slides {
+        margin-bottom: 30px;
+        ion-slide {
+            .silde-child {
+                display: block !important;
+                padding: 30px;
+                width: 100%;
+                img {
+                    width: 80%;
+                    margin: 20px auto
+                }
+                .top-text {
+                    font-size: 20px;
+                    font-family: 'grotesque-bold';
+                }
+                .btm-text {
+                    font-size: 18px;
+                    line-height: 20px;
+                    width: 90%;
+                    margin: 10px auto;
+                    font-weight: 300
+                }
+            }
+        }
+    }
+}
