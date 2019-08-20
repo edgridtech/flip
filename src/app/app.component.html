@@ -1,8 +1,8 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
-  <div class="actionsheet" *ngIf="globals.actionsheet.open" (click)="closeSheet()">
-    <div class="overlay"></div>
-    <div class="content">
+  <div class="actionsheet" *ngIf="globals.actionsheet.open">
+    <div class="overlay" (click)="closeSheet()"></div>
+    <div class="content" (swipeleft)="swiped($event)">
       <div class="span"></div>
         <ion-row class="roww">
           <ion-col size="3">
@@ -27,10 +27,37 @@
         <img src="../assets/beginner.svg" class="lvl" alt=""> <span class="text">Beginner</span> <br>
 
         <div class="center">
-          <button class="green-btn big-btn" [routerLink]="['/verifynumber']">
+          <button class="green-btn big-btn" [routerLink]="['/readflip']" (click)="closeSheet()"> 
             <b>Read flip </b> <img src="../assets/lock.svg" alt="">
           </button>
         </div>
+    </div>
+  </div>
+
+  <div class="actionsheet" *ngIf="globals.smallSheet.open">
+    <div class="overlay" (click)="closeSheet()"></div>
+    <div class="small-content">
+      <div class="filter">
+        <img src="../../assets/filter.svg" class="filter-img" alt=""> 
+        <span class="filter-text">Filter results</span>
+        <img src="../assets/close.svg" (click)="closeSheet()" class="close" alt="">
+      </div>
+      <ion-list>
+          <ion-item>
+            <ion-label>Beginner</ion-label>
+            <ion-toggle [(ngModel)]="beginner" color="primary"></ion-toggle>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>Intermediate</ion-label>
+            <ion-toggle [(ngModel)]="intermediate" color="primary"></ion-toggle>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>Advanced</ion-label>
+            <ion-toggle [(ngModel)]="advanced" color="primary"></ion-toggle>
+          </ion-item>
+        </ion-list>
     </div>
   </div>
 </ion-app>

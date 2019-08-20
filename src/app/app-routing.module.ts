@@ -10,7 +10,15 @@ const routes: Routes = [
   { path: 'choosesubjects', loadChildren: './choosesubjects/choosesubjects.module#ChoosesubjectsPageModule' },
   { path: 'seemore', loadChildren: './seemore/seemore.module#SeemorePageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
-  { path: 'editprofile', loadChildren: './editprofile/editprofile.module#EditprofilePageModule' }
+  { path: 'editprofile', loadChildren: './editprofile/editprofile.module#EditprofilePageModule' },
+  { path: 'morebookmarks', loadChildren: './morebookmarks/morebookmarks.module#MorebookmarksPageModule' },
+  { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
+  { path: 'notifications', loadChildren: './notifications/notifications.module#NotificationsPageModule' },
+  { path: 'upgrade', loadChildren: './upgrade/upgrade.module#UpgradePageModule' },
+  { path: 'pay', loadChildren: './pay/pay.module#PayPageModule' },
+  { path: 'managepayments', loadChildren: './managepayments/managepayments.module#ManagepaymentsPageModule' },
+  { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
+  { path: 'readflip', loadChildren: './readflip/readflip.module#ReadflipPageModule' }
 ];
 @NgModule({
   imports: [

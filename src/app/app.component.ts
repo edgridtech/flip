@@ -11,6 +11,9 @@ import { GlobalService } from './global.service';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  public beginner = true
+  public intermediate = false
+  public advanced = false
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -29,6 +32,10 @@ export class AppComponent {
 
 
   closeSheet(){
-    this.globals.actionsheet.open = false
+    this.globals.actionsheet.open = this.globals.smallSheet.open = false
+  }
+
+  swiped(e) {
+    console.log(e)
   }
 }

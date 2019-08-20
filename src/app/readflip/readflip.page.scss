@@ -1,0 +1,70 @@
+ion-header {
+    margin-bottom: 0px !important;
+    p {
+      padding: 0 15px;
+      font-weight: 600;
+      text-align: center
+    }
+}
+.back {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    width: 11px;
+    margin: 6px 12px;
+}
+.read {
+    font-family: 'tisapro-regular';
+    .wrap {
+        width: 100%;
+        height: 5px;
+        background: rgba(17, 42, 98, 0.05);
+        .inner {
+            width: 30%;
+            font-family: 'tisapro-regular';
+            height: 5px;
+            background-color: #112A62;
+            border-radius: 5px;
+            transition: linear all 0.3s
+        }
+    }
+    .story {
+        padding: 12px 20px;
+        p {
+            overflow-x: hidden;
+            text-align: justify;    
+            height: 82vh;
+            line-height: 23px;
+            column-gap: 0px;
+            // column-width: 140px;
+            // margin-right: 15px;
+            transition: linear all 0.3s;
+        }
+        img {
+            margin: 10px 0 !important;
+            width: 100% !important;
+        }
+    }
+    .loading {
+        width: 100%;
+        text-align: center;
+        img {
+            position: relative;
+            top: 200px;
+            animation-name: beat;
+            animation-duration: 1s;
+            animation-iteration-count: infinite
+        }
+        @keyframes beat {
+            0% {
+                width: 45px
+            }
+            50% {
+                width: 50px
+            }
+            100% {
+                width: 45px
+            }
+        }
+    }
+}

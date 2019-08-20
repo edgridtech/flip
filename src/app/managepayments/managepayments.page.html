@@ -1,0 +1,35 @@
+<ion-header no-border>
+    <img src="../../assets/back.svg" class="back" (click)="back()" alt="">
+    <p class="green--text">
+      Manage payments
+    </p>
+  </ion-header>
+
+<ion-content class="manage" *ngIf="!paid">
+    <img src="../../assets/empty.svg" alt="" class="empty-img">
+    <p class="empty-text blue--text">
+      Nothing to see here. You are on the free plan
+    </p>
+    <button class="green-btn big-btn" [routerLink]="['/upgrade']">
+      Upgrade
+    </button>
+  </ion-content>
+  <ion-content class="manage" *ngIf="paid">
+      <img src="../../assets/premium.svg" alt="" class="empty-img">
+      <p>
+        YOUR CURRENT PLAN
+      </p>
+      <p class="sub blue--text">
+        Premium
+      </p>
+      <p class="txt blue--text">
+        Expires 02 Jan 2019
+      </p>
+      <button class="green-btn big-btn" [routerLink]="['/upgrade']">
+        Pay now
+      </button>
+
+      <p class="btm-txt">
+        You can pay now to extend your plan beyond the expiry date
+      </p>
+  </ion-content>

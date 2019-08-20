@@ -1,0 +1,44 @@
+ion-header {
+    margin-bottom: 10px;
+    p {
+      padding: 0 15px;
+      font-weight: 600;
+      text-align: center
+    }
+}
+.back {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 11px;
+    margin: 6px 12px;
+}
+.manage {
+    text-align: center;
+    .empty-img {
+        width: 70%;
+        margin: 50px 15% 10px 15%
+    }
+    .empty-text {
+        width: 70%;
+        margin: 30px 15%;
+        font-size: 16px;
+        line-height: 20px
+    }
+    p {
+        margin: 12px 0;
+    }
+    .sub {
+        font-size: 24px;
+        font-family: 'grotesque-bold'
+    }
+    .txt, .btm-txt {
+        font-family: 'grotesque-light';
+        width: 70%;
+        margin: 0 15%
+    }
+    .big-btn {
+        margin: 30px 0
+    }
+
+}

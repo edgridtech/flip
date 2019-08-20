@@ -1,0 +1,20 @@
+<ion-header no-border>
+    <img src="../../assets/back.svg" class="back" (click)="back()" alt="">
+    <p class="green--text" (click)="logg()">
+      What is a cell?
+    </p>
+  </ion-header> 
+
+<ion-content class="read">
+  <div class="wrap">
+    <div class="inner" [ngStyle]="{ 'width': loadedWidth }"></div>
+  </div>
+
+  <div class="loading" *ngIf="loading">
+    <img src="../../assets/logo.svg" alt="">
+  </div>
+
+  <div class="story" (click)="slide($event)" #story [ngStyle]="{'visibility': visibility}">
+    <p [ngStyle]="{ 'column-width': width_}" #page></p>
+  </div>
+</ion-content>

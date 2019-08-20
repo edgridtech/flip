@@ -1,8 +1,8 @@
 <ion-header no-border>
   <p class="green--text">
     Your bookmarks
-    <img src="../../assets/search.svg" alt="">
-    <img src="../../assets/notification.svg" alt="">
+    <img src="../../assets/notification.svg" alt="" [routerLink]="['/notifications']">
+    <img src="../../assets/search.svg" alt="" [routerLink]="['/search']">
   </p>
 </ion-header>
   
@@ -15,7 +15,7 @@
 </ion-content>
 <ion-content class="bookmarks" *ngIf="!empty">
     <p class="heading">
-      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+      Biology <span class="green--text" [routerLink]="['/morebookmarks']">See more</span>
     </p>
     <div class="scrolling-wrapper">
       <div class="card_" (click)="openSheet()">
@@ -28,7 +28,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -126,14 +126,14 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
     </div>
   
     <p class="heading">
-      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+      Biology <span class="green--text" [routerLink]="['/morebookmarks']">See more</span>
     </p>
     <div class="scrolling-wrapper">
       <div class="card_" (click)="openSheet()">
@@ -146,7 +146,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -174,7 +174,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -216,7 +216,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -230,7 +230,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -244,14 +244,14 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
     </div>
   
     <p class="heading">
-      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+      Biology <span class="green--text" [routerLink]="['/morebookmarks']">See more</span>
     </p>
     <div class="scrolling-wrapper">
       <div class="card_" (click)="openSheet()">
@@ -264,7 +264,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -278,7 +278,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -292,7 +292,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -306,7 +306,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -320,7 +320,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -334,7 +334,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -348,7 +348,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -362,14 +362,14 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
     </div>
     
     <p class="heading">
-      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+      Biology <span class="green--text" [routerLink]="['/morebookmarks']">See more</span>
     </p>
     <div class="scrolling-wrapper">
       <div class="card_" (click)="openSheet()">
@@ -382,7 +382,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -396,7 +396,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -410,7 +410,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -424,7 +424,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -438,7 +438,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -452,7 +452,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -466,7 +466,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -480,14 +480,14 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
     </div>
   
     <p class="heading">
-      Biology <span class="green--text" [routerLink]="['/seemore']">See more</span>
+      Biology <span class="green--text" [routerLink]="['/morebookmarks']">See more</span>
     </p>
     <div class="scrolling-wrapper">
       <div class="card_" (click)="openSheet()">
@@ -500,7 +500,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -514,7 +514,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -528,7 +528,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -542,7 +542,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -556,7 +556,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -570,7 +570,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -584,7 +584,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>
@@ -598,7 +598,7 @@
             <p class="dark--text1 card-summary">
               An introduction to cells
             </p>
-            <img src="../../assets/tag.svg" class="tag" alt="">
+            <img src="../../assets/filled-tag.svg" class="tag" alt="">
           </div>
         </div>
       </div>

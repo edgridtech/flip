@@ -62,14 +62,32 @@
     border-radius: 50px;
 }
 
+.small-inp {
+    height: 40px;
+    border: 1px solid #DBE6EC;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+input, select {
+    background-color: transparent !important;
+}
 input:focus, select:focus {
     outline: none;
     box-shadow: 0 0 5px #9ec7f5;
     border: 1px solid #4693ec8c;
 }
+
 input::placeholder, option {
-    color: #4E5253;
+    color: #8B90A0;
+    font-weight: 300;
     font-size: 16px;
+}
+
+
+.small-inp::placeholder {
+    color: #8B90A0 !important;
+    font-size: 14px !important;
+    font-weight: 300;
 }
 
 .white-btn {
@@ -86,6 +104,9 @@ input::placeholder, option {
     margin: 5px;
     font-size: 18px;
     font-family: 'grotesque-regular';
+}
+button {
+    font-family: 'grotesque-regular' !important
 }
 button[disabled] {
     background-color: #D2D4D4 !important
@@ -139,6 +160,46 @@ ion-header {
         }
         to {
             height: 390px
+        }
+    }
+
+    // small sheet
+    .small-content {
+        height: 220px;
+        width: 100%;
+        background-color: #FFFFFF;
+        position: fixed;
+        bottom: 0;
+        z-index: 1005;
+        border-radius: 10px 10px 0 0;
+        animation-name: grow-small;
+        animation-duration: 0.7s;
+        overflow: hidden;
+        .filter {
+            padding: 15px 0px;
+            background: rgba(200, 216, 249, 0.15);
+            .filter-img {
+                width: 25px;
+                margin: 0px 8px 0 12px;
+            }
+            .filter-text {
+                color: #112A62;
+                font-family: 'grotesque-bold';
+                position: relative;
+                top: -6px;
+            }
+            .close {
+                float: right;
+                margin-right: 10px
+            }
+        }
+    }
+    @keyframes grow-small {
+        from {
+            height: 0px
+        }
+        to {
+            height: 220px
         }
     }
 }

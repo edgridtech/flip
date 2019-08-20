@@ -1,0 +1,86 @@
+ion-header {
+    margin-bottom: 10px;
+    p {
+      padding: 0 15px;
+      font-weight: 600;
+      text-align: center
+    }
+}
+.back {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    width: 22px;
+    margin: 6px 12px;
+}
+.upgrade {
+    .bordered {
+        border: 0.75px solid rgba(43, 72, 102, 0.15);
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-align: center;
+        padding: 30px !important;
+        margin: 15px 25px;
+        .divide {
+            width: 100%;
+            text-align: center;
+            .dash {
+                width: 100px;
+                height: 4px;
+                background-color: #112A62;
+                border-radius: 5px;
+                margin: 30px auto;
+            }
+        }
+        p {
+            width: 100%;
+            margin: 10px 0;
+            text-align: left;
+            color: #4E5253
+        }
+        .title-text {
+            font-family: 'grotesque-bold';
+            font-size: 14px;
+            text-align: center !important
+        }
+        .title-text2 {
+            font-family: 'grotesque-bold';
+            text-align: center !important
+        }
+        .price {
+            font-size: 25px;
+            text-align: center !important;
+            font-family: 'grotesque-bold';
+            margin: 12px 0 40px 0;
+        }
+        .types {
+            font-size: 14px;
+            text-align: center !important;
+            span {
+                color: #112A62;
+                font-family: 'grotesque-regular'
+            }
+        }
+        select {
+            width: 100%
+        }
+        .discount {
+            background: rgba(252, 87, 94, 0.1);
+            border-radius: 50px;
+            padding: 12px 20px;
+            color: #FC575E;
+        }
+        .big-btn {
+            margin: 50px 0 0 0
+        }
+        ion-row {
+                text-align: left;
+                ion-col {
+                span {
+                    color: #112A62;
+                    font-family: 'grotesque-bold'
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<ion-header no-border>
+  <img src="../../assets/green-close.svg" class="back" (click)="back()" alt="">
+  <p class="blue--text">
+    <img src="../../assets/bolt.svg" alt=""> Upgrade
+  </p>
+</ion-header>
+
+
+<ion-content>
+    <ul class="topLinks">
+      <li *ngFor="let link of links; let i = index" (click)="pickLink(i)" [ngClass]="link.class">
+        {{link.to}}
+      </li>
+    </ul>
+    <div class="bordered" *ngIf="link === 'Airtime'">
+      <p class="blue--text title-text">
+        HOW TO PAY?
+      </p>
+      <p class="types">
+        Ensure your have the required amount as airtime on your mobile phone. Then, click Pay Now
+      </p>
+  
+      <p class="blue--text title-text2">
+        Amount due
+      </p>
+      <p class="green--text price">
+          N200
+      </p>
+  
+      <button class="green-btn big-btn">
+        Pay now
+      </button>
+      <div class="secure">
+        <img src="../../assets/secure_.svg" alt="">
+      </div>
+    </div>
+
+    <div class="bordered" *ngIf="link === 'Coupon code'">
+        <p class="blue--text title-text">
+          USE COUPON CODE?
+        </p>
+        <p class="types">
+            A coupon code is a <span>6-digit PIN </span> that gives you free access to Flip <span>Premium</span> for <span>one year</span>. It is paid for by kind-hearted sponsors. Enter it below if you have one
+        </p>
+    
+        <input type="text" placeholder="Enter pin" class="main-inp">
+    
+        <button class="green-btn big-btn">
+          Use code
+        </button>
+        <div class="secure">
+          <img src="../../assets/secure_.svg" alt="">
+        </div>
+      </div>
+
+    <div class="bordered" *ngIf="link === 'Bank card'">
+        <p class="blue--text title-text">
+          HOW TO PAY?
+        </p>
+        <p class="types">
+          Pay <span>securely</span> using your debit/credit (ATM) card
+        </p>
+    
+        <p class="blue--text title-text2">
+          Amount due
+        </p>
+        <p class="green--text price">
+            N200
+        </p>
+    
+        <button class="green-btn big-btn">
+          Pay now
+        </button>
+        <div class="secure">
+          <img src="../../assets/secure_.svg" alt="">
+        </div>
+      </div>
+</ion-content>
+

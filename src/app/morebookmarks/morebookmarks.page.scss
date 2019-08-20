@@ -1,6 +1,6 @@
 ion-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px !important;
     font-weight: 600;
     .back {
         position: absolute;
@@ -9,7 +9,40 @@ ion-header {
         width: 11px;
     }
 }
-.seemore {
+
+.morebookmarks {
+    .topLinks {
+        width: 100%;
+        padding: 0 !important;
+        box-shadow: 2px 2px 2px #fcfcfc;
+        background-color: #fff;
+        li {
+            display: inline-block;
+            list-style: none;
+            width: 33%;
+            font-size: 14px;
+            font-family: 'grotesque-regular';
+            padding: 12px 0;
+            text-align: center;
+            color: rgba(17, 42, 98, 0.5);
+        }
+        .selected {
+            border-bottom: 2px solid #54C270;
+            color: #112A62
+        }
+    }
+
+    .empty-img {
+        width: 70%;
+        margin: 50px 15% 10px 15%
+    }
+    .empty-text {
+        width: 70%;
+        margin: 30px 15%;
+        font-size: 16px;
+        line-height: 20px
+    }
+
     ion-grid {
         ion-row {
             border-bottom: 1px solid #F1F5FF;

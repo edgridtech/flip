@@ -1,0 +1,31 @@
+ion-header {
+    margin-bottom: 10px;
+    p {
+      padding: 0 15px;
+      font-weight: 600;
+      text-align: center
+    }
+}
+.back {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    width: 11px;
+    margin: 6px 12px;
+}
+.notifications {
+    ion-row {
+        font-family: 'grotesque-regular';
+        font-size: 14px;
+        padding: 12px !important;
+        border-bottom: 0.75px solid rgba(17, 42, 98, 0.15);
+        span {
+            font-family: 'grotesque-bold';
+            color: #112A62;
+        }
+        small {
+            font-size: 12px;
+            font-family: 'grotesque-light'
+        }
+    }
+}

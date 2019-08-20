@@ -1,0 +1,73 @@
+<ion-header no-border>
+    <img src="../../assets/green-close.svg" class="back" (click)="back()" alt="">
+    <p class="blue--text">
+      <img src="../../assets/bolt.svg" alt=""> Upgrade
+    </p>
+  </ion-header>
+
+<ion-content class="upgrade">
+  <div class="bordered" *ngIf="beforeUgrade">
+    <p class="blue--text title-text">
+        GET THE COMPLETE PACKAGE
+    </p>
+    <p class="green--text price">
+        N200/week
+    </p>
+    <p class="types">
+      Pay <span>weekly</span>, <span>monthly</span> or <span>yearly</span> with your <span>airtime</span>, <span>coupon code</span> or <span>ATM card</span>
+    </p>
+    <div class="divide">
+      <div class="dash"></div>
+    </div>
+    <ion-row>
+      <ion-col size="2">
+        <img src="../../assets/checked.svg" alt="">
+      </ion-col>
+      <ion-col size="10">
+        <span>Enjoy</span> unlimited access to all the flips on every subject
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <img src="../../assets/checked.svg" alt="">
+      </ion-col>
+      <ion-col size="10">
+        Access new <span>premium content</span> added regularly
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <img src="../../assets/checked.svg" alt="">
+      </ion-col>
+      <ion-col size="10">
+        <span>Stop</span> seeing advertisements
+      </ion-col>
+    </ion-row>
+    <button class="green-btn big-btn" (click)="openUpgrade()">
+      Upgrade now
+    </button>
+  </div>
+
+
+  <div class="bordered" *ngIf="!beforeUgrade">
+    <p class="blue--text title-text">
+      HOW LONG ARE YOU PAYING FOR?
+    </p>
+    <select name="" id="" class="main-inp"></select>
+
+    <p class="blue--text title-text2">
+      Amount due
+    </p>
+    <p class="green--text price">
+        N200/week
+    </p>
+
+    <span class="discount">
+      Save 13.5%
+    </span>
+
+    <button class="green-btn big-btn" [routerLink]="['/pay']">
+      Proceed to pay  
+    </button>
+  </div>
+</ion-content>
