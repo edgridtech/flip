@@ -31,8 +31,9 @@ ion-content {
             color: rgba(17, 42, 98, 0.5);
         }
         .selected {
-            border-bottom: 2px solid #54C270;
-            color: #112A62
+            border-bottom: 3px solid #54C270;
+            color: #112A62;
+            font-family: 'grotesque-bold'
         }
     }
     .bordered {

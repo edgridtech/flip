@@ -6,29 +6,48 @@
       <div class="span"></div>
         <ion-row class="roww">
           <ion-col size="3">
-            <div class="img" style="background-image: url('../assets/Rectangle.png')"></div>
+            <div class="img" [style.background-image]="getSantizeUrl(globals.actionsheet.selectedFlip.banner+globals.actionsheet.selectedFlip.subject)"></div>
           </ion-col>
           <ion-col size="9">
-            <h3 class="blue--text heading">I'm a big deal</h3>
-            <p class="sub-text">Listen, I've had a pretty messed</p>
-            <img src="../assets/tag.svg" class="tag" alt="">
+            <h3 class="blue--text heading">
+              {{globals.actionsheet.selectedFlip.title}}
+            </h3>
+            <p class="sub-text">
+                {{globals.actionsheet.selectedFlip.description}}
+            </p>
+            <img src="../assets/tag.svg" *ngIf="!globals.actionsheet.selectedFlip.isBookmarked" class="tag" alt="">
+            <img src="../assets/filled-tag.svg" *ngIf="globals.actionsheet.selectedFlip.isBookmarked" class="tag" alt="">
           </ion-col>
         </ion-row>
         <p class="blue--text sheet-title">
           <b>About this flip?</b>
         </p>
         <p class="text">
-            In this flip, you will be introduced to core concepts in cell biology 
-            including the definition of cells, types of cells, cell components and 
+          {{globals.actionsheet.selectedFlip.longDesc}}
         </p>
         <p class="blue--text sheet-title">
           <b>Level</b>
         </p>
-        <img src="../assets/beginner.svg" class="lvl" alt=""> <span class="text">Beginner</span> <br>
+
+        <span *ngIf="globals.actionsheet.selectedFlip.level === 'Beginner'">
+          <img src="../assets/beginner.svg" class="lvl" alt=""> <span class="">{{globals.actionsheet.selectedFlip.level}}</span>
+        </span>  
+        <br>
+        <span *ngIf="globals.actionsheet.selectedFlip.level === 'Intermediate'">
+          <img src="../assets/intermediate.svg" class="lvl" alt=""> <span class="">{{globals.actionsheet.selectedFlip.level}}</span>
+        </span> 
+        <br>
+        <span *ngIf="globals.actionsheet.selectedFlip.level === 'Advanced'">
+          <img src="../assets/advanced.svg" class="lvl" alt=""> <span class="">{{globals.actionsheet.selectedFlip.level}}</span> 
+        </span>
+        <br>
 
         <div class="center">
-          <button class="green-btn big-btn" [routerLink]="['/readflip']" (click)="closeSheet()"> 
-            <b>Read flip </b> <img src="../assets/lock.svg" alt="">
+          <button class="green-btn big-btn" *ngIf="globals.actionsheet.selectedFlip.paid"> 
+            <b>Read flip </b> <img src="../assets/lock.svg" class="lock" alt="">
+          </button>
+          <button class="green-btn big-btn" [routerLink]="['/readflip']" *ngIf="!globals.actionsheet.selectedFlip.paid" (click)="closeSheet()"> 
+            <b>Read flip </b> <img src="../assets/white-caret.svg" class="go" alt="">
           </button>
         </div>
     </div>
@@ -45,7 +64,7 @@
       <ion-list>
           <ion-item>
             <ion-label>Beginner</ion-label>
-            <ion-toggle [(ngModel)]="beginner" color="primary"></ion-toggle>
+            <ion-toggle [(ngModel)]="beginner" (ionChange)="checked($event)" color="primary"></ion-toggle>
           </ion-item>
         
           <ion-item>

@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'verifynumber', loadChildren: './verifynumber/verifynumber.module#VerifynumberPageModule' },
   { path: 'choosesubjects', loadChildren: './choosesubjects/choosesubjects.module#ChoosesubjectsPageModule' },
-  { path: 'seemore', loadChildren: './seemore/seemore.module#SeemorePageModule' },
+  { path: 'seemore/:subject', loadChildren: './seemore/seemore.module#SeemorePageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'editprofile', loadChildren: './editprofile/editprofile.module#EditprofilePageModule' },
   { path: 'morebookmarks', loadChildren: './morebookmarks/morebookmarks.module#MorebookmarksPageModule' },
@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'pay', loadChildren: './pay/pay.module#PayPageModule' },
   { path: 'managepayments', loadChildren: './managepayments/managepayments.module#ManagepaymentsPageModule' },
   { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
-  { path: 'readflip', loadChildren: './readflip/readflip.module#ReadflipPageModule' }
+  { path: 'readflip', loadChildren: './readflip/readflip.module#ReadflipPageModule' },
+  { path: 'popover', loadChildren: './popover/popover.module#PopoverPageModule' }
 ];
 @NgModule({
   imports: [

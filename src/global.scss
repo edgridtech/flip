@@ -142,7 +142,7 @@ ion-header {
         z-index: 1000;
     }
     .content {
-        height: 390px;
+        height: 60vh;
         width: 100%;
         background-color: #FFFFFF;
         position: fixed;
@@ -156,10 +156,10 @@ ion-header {
     }
     @keyframes grow {
         from {
-            height: 0px
+            height: 0
         }
         to {
-            height: 390px
+            height: 60vh
         }
     }
 

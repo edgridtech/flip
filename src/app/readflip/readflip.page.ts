@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import {Store} from '@ngrx/store';
+import {AppState} from '../../store/app.state'
 
 @Component({
   selector: 'app-readflip',
@@ -57,7 +59,8 @@ export class ReadflipPage implements OnInit {
   @ViewChild("page", null) page: ElementRef;
   @ViewChild("story", null) story: ElementRef;
   constructor(
-    public navCtrl: NavController
+    public navCtrl: NavController,
+    public store: Store<AppState>
   ) { }
 
   ngOnInit() {
@@ -74,6 +77,10 @@ export class ReadflipPage implements OnInit {
       this.loading = false
       this.visibility = 'visible'
     }, 3000);
+
+    this.store.subscribe(store => {
+      console.log(store)
+    })
   }
   
   logg() {
